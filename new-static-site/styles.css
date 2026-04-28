@@ -1,0 +1,21 @@
+@font-face{font-family:HKGrotesk;src:url('../wp-content/uploads/2020/01/HKGroteskPro-Light.woff2') format('woff2');font-display:swap}
+:root{--primary:#1e73be;--accent:#dd9933;--text:#213547;--bg:#fff;--muted:#f5f7fb}
+*{box-sizing:border-box}body{margin:0;font-family:HKGrotesk,Arial,sans-serif;color:var(--text);line-height:1.55;background:#fff}
+a{color:var(--primary);text-decoration:none}
+.container{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid #e7e7e7}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:.8rem 0}
+.logo{display:flex;align-items:center;gap:.7rem;font-weight:700;color:#111}
+.logo img{width:52px;height:52px;border-radius:50%;object-fit:cover}
+.menu{display:flex;gap:1rem;flex-wrap:wrap}.menu a{padding:.45rem .7rem;border-radius:999px}.menu a.active,.menu a:hover{background:var(--muted)}
+.hero{background:linear-gradient(rgba(17,27,43,.55),rgba(17,27,43,.55)),url('../wp-content/uploads/2022/11/3-1.jpg') center/cover no-repeat;color:#fff;padding:6rem 0 5rem;text-align:center}
+.hero h1{font-size:clamp(2rem,4vw,3.2rem);margin:.2rem 0}.hero p{max-width:700px;margin:auto;font-size:1.1rem}
+.section{padding:3rem 0}.grid{display:grid;gap:1.2rem}.grid-3{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}.card{background:#fff;border:1px solid #e5e9f0;border-radius:14px;padding:1rem;box-shadow:0 3px 18px rgba(0,0,0,.04)}
+.two-col{display:grid;grid-template-columns:1.1fr .9fr;gap:1.3rem;align-items:center}
+.two-col img,.gallery img{width:100%;border-radius:12px;display:block}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:.7rem}
+.badge{display:inline-block;background:#edf5ff;color:var(--primary);padding:.2rem .65rem;border-radius:999px;font-size:.86rem}
+footer{background:#111827;color:#d5deee;padding:2rem 0;margin-top:2rem}
+footer a{color:#fff}
+@media (max-width:800px){.two-col{grid-template-columns:1fr}.menu{display:none}.menu.open{display:flex;position:absolute;top:72px;left:4%;right:4%;background:#fff;padding:.8rem;border:1px solid #e5e7eb;border-radius:12px;flex-direction:column}.toggle{display:block}}
+.toggle{display:none;border:1px solid #ddd;background:#fff;padding:.4rem .6rem;border-radius:8px}
